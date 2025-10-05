@@ -33,7 +33,7 @@ class InscriptionActivity : AppCompatActivity() {
             val intent = Intent(this, ComprobanteActivity::class.java)
             intent.putExtra("tipoOperacion", "Inscripción")
             intent.putExtra("nombreCliente", tvNombre.text.toString())
-            // No incluimos importe porque es inscripción
+
             startActivity(intent)
         }
     }
