@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#A58AF4"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/txtBienvenida"
+        android:text="Bienvenido User"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAltaSocio"
+        android:text="Alta Socio"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_menu_button" />
+
+    <Button
+        android:id="@+id/btnAltaNoSocio"
+        android:text="Alta No Socio"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_menu_button" />
+
+    <Button
+        android:id="@+id/btnPagoCuota"
+        android:text="Pago Cuota"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_menu_button" />
+
+    <Button
+        android:id="@+id/btnInscribirActividad"
+        android:text="Inscribir a Actividad"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_menu_button" />
+
+    <Button
+        android:id="@+id/btnVerClientes"
+        android:text="Ver Clientes a cobrar"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_menu_button" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="←"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:text="Salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+</LinearLayout>
