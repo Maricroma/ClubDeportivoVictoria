@@ -24,6 +24,12 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnPagoCuota = findViewById<Button>(R.id.btnPagoCuota)
+        btnPagoCuota.setOnClickListener {
+            val intent = Intent(this, PagoCuotaActivity::class.java)
+            startActivity(intent)
+        }
+
         btnSalir.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

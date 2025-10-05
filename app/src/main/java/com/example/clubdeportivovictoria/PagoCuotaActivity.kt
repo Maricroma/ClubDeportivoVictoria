@@ -17,7 +17,6 @@ class PagoCuotaActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_pago_cuota)
 
-        // Asegurate de que el ConstraintLayout raíz tenga android:id="@+id/main"
         val mainLayout = findViewById<ConstraintLayout>(R.id.main)
         ViewCompat.setOnApplyWindowInsetsListener(mainLayout) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
