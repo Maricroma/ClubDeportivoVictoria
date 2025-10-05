@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="24dp"
-    android:background="#A58AF4"
+    android:background="#9683F5"
     tools:context=".MenuActivity">
 
     <TextView
@@ -19,56 +20,63 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button
+    <!-- Botones del menú -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAltaSocio"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
         android:text="Alta Socio"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_menu_button" />
+        android:background="@drawable/rounded_menu_button"
+        app:backgroundTint="@null" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAltaNoSocio"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
         android:text="Alta No Socio"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_menu_button" />
+        android:background="@drawable/rounded_menu_button"
+        app:backgroundTint="@null" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPagoCuota"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
         android:text="Pago Cuota"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_menu_button" />
+        android:background="@drawable/rounded_menu_button"
+        app:backgroundTint="@null" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnInscribirActividad"
-        android:text="Inscribir a Actividad"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
+        android:text="Inscribir a Actividad"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_menu_button" />
+        android:background="@drawable/rounded_menu_button"
+        app:backgroundTint="@null" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnVerClientes"
-        android:text="Ver Clientes a cobrar"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginBottom="40dp"
+        android:text="Ver Clientes a cobrar"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_menu_button" />
+        android:background="@drawable/rounded_menu_button"
+        app:backgroundTint="@null" />
 
+    <!-- Botón salir -->
     <LinearLayout
         android:orientation="horizontal"
         android:gravity="center"
@@ -83,14 +91,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSalir"
             android:text="Salir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            app:backgroundTint="@null"/>
     </LinearLayout>
 
 </LinearLayout>
+
