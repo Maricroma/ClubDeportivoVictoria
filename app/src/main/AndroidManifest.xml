@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -11,6 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoVictoria">
+        
+        <activity
+            android:name=".ComprobanteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagoCuotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InscriptionActivity"
+            android:exported="false">
+        </activity>
         <activity
             android:name=".ListadoClientesActivity"
             android:exported="false" />
@@ -22,7 +32,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -31,10 +40,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
