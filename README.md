@@ -11,7 +11,7 @@ Club Deportivo Victoria es una aplicación desarrollada en **Android Studio** qu
 🎯 El objetivo es simplificar la administración y mejorar la experiencia tanto de los empleados como de los socios del club.
 
 ## 🎨 Diseño
-Puedes ver el diseño y prototipo de la aplicación en Figma 👉 (https://www.figma.com/design/bIp8TEj7knFlhdlPXGZzRu/App-de-Club-Deportivo?node-id=0-1&t=pQJngDT8txofbL1O-1)
+Puedes ver el diseño y prototipo de la aplicación en Figma 👉 [Enlace al proyecto Figma](https://www.figma.com/design/bIp8TEj7knFlhdlPXGZzRu/App-de-Club-Deportivo?node-id=0-1&t=pQJngDT8txofbL1O-1)
 
 ## ⚙️ Tecnologías utilizadas
 - Kotlin
