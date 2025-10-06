@@ -10,30 +10,18 @@
     android:background="#5030F5"
     tools:context=".ListadoClientesActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="start|center_vertical"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAtras"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:text="←"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
-            android:layout_marginEnd="6dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/btnAtras"
-            android:text="Atrás"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:background="@android:color/transparent" />
-    </LinearLayout>
+        android:text="← Atrás"
+        android:textColor="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_gravity="start"
+        android:padding="4dp" />
 
     <TextView
         android:text="Lista de Clientes a cobrar"

@@ -8,7 +8,7 @@
     android:padding="24dp"
     android:gravity="center_horizontal"
     android:background="#9683F5"
-    tools:context=".ComprobanteActivity">
+    tools:context=".ImprimeCarnetActivity">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAtras"
@@ -31,7 +31,7 @@
         android:id="@+id/textPregunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Imprimir comprobante?"
+        android:text="¿Imprimir carnet?"
         android:textSize="20sp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"

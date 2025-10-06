@@ -18,6 +18,20 @@ class MenuActivity : AppCompatActivity() {
 
         tvBienvenida.text = "Bienvenido/a, $nombre"
 
+        val btnAltaSocio = findViewById<Button>(R.id.btnAltaSocio)
+        btnAltaSocio.setOnClickListener {
+            val intent = Intent(this, AltaSocioActivity::class.java)
+            intent.putExtra("esSocio", true)
+            startActivity(intent)
+        }
+
+        val btnAltaNoSocio = findViewById<Button>(R.id.btnAltaNoSocio)
+        btnAltaNoSocio.setOnClickListener {
+            val intent = Intent(this, AltaSocioActivity::class.java)
+            intent.putExtra("esSocio", false)
+            startActivity(intent)
+        }
+
         val btnVerClientes = findViewById<Button>(R.id.btnVerClientes)
         btnVerClientes.setOnClickListener {
             val intent = Intent(this, ListadoClientesActivity::class.java)
@@ -27,6 +41,12 @@ class MenuActivity : AppCompatActivity() {
         val btnPagoCuota = findViewById<Button>(R.id.btnPagoCuota)
         btnPagoCuota.setOnClickListener {
             val intent = Intent(this, PagoCuotaActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnListaActividades = findViewById<Button>(R.id.btnInscribirActividad)
+        btnListaActividades.setOnClickListener {
+            val intent = Intent(this, ListaActividadesActivity::class.java)
             startActivity(intent)
         }
 

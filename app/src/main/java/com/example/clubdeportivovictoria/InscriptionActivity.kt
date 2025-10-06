@@ -27,6 +27,7 @@ class InscriptionActivity : AppCompatActivity() {
         val btnImprimir = findViewById<MaterialButton>(R.id.btnImprimir)
         val tvNombre = findViewById<TextView>(R.id.tvNombre)
         val tvFechaVencimiento = findViewById<TextView>(R.id.tvFechaVencimiento)
+        val btnAtras = findViewById<MaterialButton>(R.id.btnAtras)
         tvFechaVencimiento.visibility = View.GONE
 
         btnImprimir.setOnClickListener {
@@ -35,6 +36,10 @@ class InscriptionActivity : AppCompatActivity() {
             intent.putExtra("nombreCliente", tvNombre.text.toString())
 
             startActivity(intent)
+        }
+
+        btnAtras.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
     }
 }

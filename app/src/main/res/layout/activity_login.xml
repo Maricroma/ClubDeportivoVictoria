@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#9386F5"
+    android:background="#9683F5"
     android:padding="32dp"
     tools:context=".LoginActivity">
 

@@ -27,6 +27,10 @@ class PagoCuotaActivity : AppCompatActivity() {
         val btnImprimir = findViewById<MaterialButton>(R.id.btnImprimir)
         val tvNombre = findViewById<TextView>(R.id.tvNombre)
         val etImporte = findViewById<EditText>(R.id.etImporte)
+        val btnAtras = findViewById<MaterialButton>(R.id.btnAtras)
+        btnAtras.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
 
         btnImprimir.setOnClickListener {
             val intent = Intent(this, ComprobanteActivity::class.java)

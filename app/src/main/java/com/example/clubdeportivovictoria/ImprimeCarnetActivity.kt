@@ -2,18 +2,13 @@ package com.example.clubdeportivovictoria
 
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.button.MaterialButton
+import androidx.appcompat.app.AppCompatActivity
 
-class ComprobanteActivity : AppCompatActivity() {
+class ImprimeCarnetActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_comprobante)
+        setContentView(R.layout.activity_imprime_carnet)
 
         val btnAtras = findViewById<Button>(R.id.btnAtras)
         val btnSi = findViewById<Button>(R.id.btnSi)
@@ -24,7 +19,7 @@ class ComprobanteActivity : AppCompatActivity() {
         }
 
         btnSi.setOnClickListener {
-            Toast.makeText(this, "Comprobante enviado a imprimir", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Carnet enviado a imprimir", Toast.LENGTH_SHORT).show()
             // más adelante se podría agregar aquí la lógica para generar el PDF o imagen
         }
 

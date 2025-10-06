@@ -2,6 +2,7 @@ package com.example.clubdeportivovictoria
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class ListadoClientesActivity : AppCompatActivity() {
@@ -13,10 +14,11 @@ class ListadoClientesActivity : AppCompatActivity() {
         val btnImprimir = findViewById<Button>(R.id.btnImprimir)
 
         btnAtras.setOnClickListener {
-            finish() // vuelve al menú anterior
+            finish()
         }
 
         btnImprimir.setOnClickListener {
+            Toast.makeText(this, "Listado enviado a imprimir", Toast.LENGTH_SHORT).show()
             // Por ahora no imprime nada — más adelante se agregará la lógica
         }
     }

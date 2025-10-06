@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+        android:background="#5030F5"
+    tools:context=".ListaActividadesActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAtras"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Atrás"
+        android:textColor="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_gravity="start"
+        android:padding="4dp" />
+
+    <TextView
+        android:text="Lista de Actividades"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layoutActividades"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:text="ID"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="#9683F5"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="Nombre"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:background="#9683F5"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="Importe"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:background="#9683F5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#9683F5"
+            android:padding="2dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cbFila1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white" />
+
+            <TextView
+                android:text="1"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="Fútbol"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="$3000"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#9683F5"
+            android:padding="2dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cbFila2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white" />
+
+            <TextView
+                android:text="2"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="Natación"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="$2500"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInscribir"
+        android:text="Inscribir"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        app:backgroundTint="@null" />
+
+</LinearLayout>
+
