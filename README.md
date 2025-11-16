@@ -43,7 +43,7 @@ La BD se crea automáticamente al ejecutar la app y se inicializa con algunos **
 ```mermaid
 erDiagram
 
-    CLIENTE {
+    CLIENTES {
         INTEGER id PK
         TEXT nombre
         TEXT apellido
@@ -52,12 +52,11 @@ erDiagram
         TEXT email
         INTEGER ficha_medica
         INTEGER es_socio
-        TEXT carnet
         TEXT proxima_fecha_pago
         TEXT fecha_inscripcion
     }
 
-    CUOTA {
+    CUOTAS {
         INTEGER id PK
         INTEGER clienteId FK
         TEXT fecha
@@ -65,7 +64,7 @@ erDiagram
         TEXT formaPago
     }
 
-    ACTIVIDAD {
+    ACTIVIDADES {
         INTEGER id PK
         TEXT nombre
         REAL precio
@@ -78,9 +77,9 @@ erDiagram
         TEXT fecha
     }
 
-    CLIENTE ||--o{ CUOTA : abona
-    CLIENTE ||--o{ PAGOS_ACTIVIDADES : realiza
-    ACTIVIDAD ||--o{ PAGOS_ACTIVIDADES : incluye
+    CLIENTES ||--o{ CUOTAS : abona
+    CLIENTES ||--o{ PAGOS_ACTIVIDADES : realiza
+    ACTIVIDADES ||--o{ PAGOS_ACTIVIDADES : incluye
 ```
 
 ## 🚀 Instalación
