@@ -12,31 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoVictoria">
         <activity
-            android:name=".ListaActividadesActivity"
+            android:name=".ui.ListaActividadesActivity"
             android:exported="false" />
         <activity
-            android:name=".ImprimeCarnetActivity"
+            android:name=".ui.ImprimeCarnetActivity"
             android:exported="false" />
         <activity
-            android:name=".AltaSocioActivity"
+            android:name=".ui.AltaSocioActivity"
             android:exported="false" />
         <activity
-            android:name=".ComprobanteActivity"
+            android:name=".ui.ComprobanteActivity"
             android:exported="false" />
         <activity
-            android:name=".PagoCuotaActivity"
+            android:name=".ui.PagoCuotaActivity"
             android:exported="false" />
         <activity
-            android:name=".InscriptionActivity"
+            android:name=".ui.InscriptionActivity"
             android:exported="false" />
         <activity
-            android:name=".ListadoClientesActivity"
+            android:name=".ui.ListadoClientesActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".ui.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

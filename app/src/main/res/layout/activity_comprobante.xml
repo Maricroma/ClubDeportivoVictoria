@@ -8,7 +8,7 @@
     android:padding="24dp"
     android:gravity="center_horizontal"
     android:background="#9683F5"
-    tools:context=".ComprobanteActivity">
+    tools:context=".ui.ComprobanteActivity">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAtras"

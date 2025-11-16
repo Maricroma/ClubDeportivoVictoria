@@ -1,4 +1,4 @@
-package com.example.clubdeportivovictoria
+package com.example.clubdeportivovictoria.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import com.example.clubdeportivovictoria.R
+import com.example.clubdeportivovictoria.data.dao.ServiceLocator
+import com.example.clubdeportivovictoria.data.models.User
 
 class LoginActivity : AppCompatActivity() {
 
@@ -16,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        ServiceLocator.init(this)
 
         txtUsuario = findViewById(R.id.txtUsuario)
         txtContrasena = findViewById(R.id.txtContrasena)
@@ -26,16 +30,26 @@ class LoginActivity : AppCompatActivity() {
             val contrasena = txtContrasena.text.toString().trim()
 
             if (usuario.isEmpty() || contrasena.isEmpty()) {
-                Toast.makeText(this, "Complete usuario y contraseña", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Complete usuario y contraseña", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
-            // creamos un usuario mockeado para poder ingresar
-            val usuarioMock = User(nombre = usuario, email = "$usuario@test.com")
+            val user = ServiceLocator.userDao.buscarUsuarioPorNombre(usuario)
+
+            if (user == null) {
+                Toast.makeText(this, "Credenciales invalidas.", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
+            if (user.pass != contrasena) {
+                Toast.makeText(this, "Credenciales invalidas.", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
 
             val intent = Intent(this, MenuActivity::class.java).apply {
-                putExtra("nombre", usuarioMock.nombre)
+                putExtra("nombre", user.nombre)
             }
+
             startActivity(intent)
             finish()
         }
